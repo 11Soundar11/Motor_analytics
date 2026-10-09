@@ -1,0 +1,332 @@
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | STARTING MOTOR INSURANCE DATA PIPELINE EXECUTION
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/raw'
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Loaded table 'customers.csv' with 20000 rows and 8 columns.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Loaded table 'vehicles.csv' with 25000 rows and 8 columns.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Loaded table 'policies.csv' with 25000 rows and 10 columns.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Loaded table 'claims.csv' with 10000 rows and 12 columns.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Loaded table 'payments.csv' with 7000 rows and 7 columns.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Beginning comprehensive validation across all tables...
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Customers table validation passed (20000 records).
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Vehicles table validation passed (25000 records).
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Policies table validation passed (25000 records).
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Claims table validation passed (10000 records).
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Payments table validation passed (7000 records).
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | All tables and relationships validated successfully.
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:05:01 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 05:05:02 | ERROR | motor_insurance_analytics | Found 59 policies where end_date < start_date. Correcting.
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Saving cleaned tables to '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/cleaned'...
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (20000 records).
+2026-10-09 05:05:02 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (25000 records).
+2026-10-09 05:05:03 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (24941 records).
+2026-10-09 05:05:03 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (10000 records).
+2026-10-09 05:05:04 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (7000 records).
+2026-10-09 05:05:04 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 05:05:04 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:04 | INFO | motor_insurance_analytics | MOTOR INSURANCE DATA PIPELINE COMPLETED SUCCESSFULLY
+2026-10-09 05:05:04 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:44 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:44 | INFO | motor_insurance_analytics | STARTING MOTOR INSURANCE DATA PIPELINE EXECUTION
+2026-10-09 05:05:44 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:44 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/raw'
+2026-10-09 05:05:44 | INFO | motor_insurance_analytics | Loaded table 'customers.csv' with 20000 rows and 8 columns.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Loaded table 'vehicles.csv' with 25000 rows and 8 columns.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Loaded table 'policies.csv' with 25000 rows and 10 columns.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Loaded table 'claims.csv' with 10000 rows and 12 columns.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Loaded table 'payments.csv' with 7000 rows and 7 columns.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Beginning comprehensive validation across all tables...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Customers table validation passed (20000 records).
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Vehicles table validation passed (25000 records).
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Policies table validation passed (25000 records).
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Claims table validation passed (10000 records).
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Payments table validation passed (7000 records).
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | All tables and relationships validated successfully.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Found 59 policies where end_date < start_date (Cancelled status). Adjusting end_date to start_date.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 05:05:45 | INFO | motor_insurance_analytics | Saving cleaned tables to '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/cleaned'...
+2026-10-09 05:05:46 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (20000 records).
+2026-10-09 05:05:46 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (25000 records).
+2026-10-09 05:05:46 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (25000 records).
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (10000 records).
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (7000 records).
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | MOTOR INSURANCE DATA PIPELINE COMPLETED SUCCESSFULLY
+2026-10-09 05:05:47 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:19:49 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'data/cleaned'
+2026-10-09 05:19:49 | ERROR | motor_insurance_analytics | Required file not found: data/cleaned/customers.csv
+2026-10-09 05:20:07 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'data/cleaned'
+2026-10-09 05:20:07 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 05:20:07 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 05:20:07 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 05:20:07 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 05:20:08 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 05:20:08 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/cleaned'
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 05:20:57 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saving cleaned tables to '/tmp/tmplnxqjsrc'...
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (3 records).
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (2 records).
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (2 records).
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (2 records).
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (1 records).
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Claims table validation passed (2 records).
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Claims validation failed: claim_amount must be positive.
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Claims validation failed: invalid damage_severity {'Catastrophic'}
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Customers table validation passed (3 records).
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Customers validation failed: customer_id contains duplicate values.
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Validation failure in 'customers': missing columns ['age']
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Policies table validation passed (3 records).
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Policies validation failed: premium_amount must be positive.
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Policies validation failed: invalid policy_status {'InvalidStatus'}
+2026-10-09 05:20:58 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 05:20:58 | ERROR | motor_insurance_analytics | Relationship validation error: claims reference unknown policy_id.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | STARTING MOTOR INSURANCE DATA PIPELINE EXECUTION
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/raw'
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Loaded table 'customers.csv' with 20000 rows and 8 columns.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Loaded table 'vehicles.csv' with 25000 rows and 8 columns.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Loaded table 'policies.csv' with 25000 rows and 10 columns.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Loaded table 'claims.csv' with 10000 rows and 12 columns.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Loaded table 'payments.csv' with 7000 rows and 7 columns.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Beginning comprehensive validation across all tables...
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Customers table validation passed (20000 records).
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Vehicles table validation passed (25000 records).
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Policies table validation passed (25000 records).
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Claims table validation passed (10000 records).
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Payments table validation passed (7000 records).
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | All tables and relationships validated successfully.
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 05:26:32 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Found 59 policies where end_date < start_date (Cancelled status). Adjusting end_date to start_date.
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Saving cleaned tables to '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/cleaned'...
+2026-10-09 05:26:33 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (20000 records).
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (25000 records).
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (25000 records).
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (10000 records).
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (7000 records).
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | MOTOR INSURANCE DATA PIPELINE COMPLETED SUCCESSFULLY
+2026-10-09 05:26:34 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '/working_dir/c_37b9f95674e07e9a/motor_insurance_analytics/data/cleaned'
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 05:26:38 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saving cleaned tables to '/tmp/tmprsy1x059'...
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (3 records).
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (2 records).
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (2 records).
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (2 records).
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (1 records).
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Claims table validation passed (2 records).
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Claims validation failed: claim_amount must be positive.
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Claims validation failed: invalid damage_severity {'Catastrophic'}
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Customers table validation passed (3 records).
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Customers validation failed: customer_id contains duplicate values.
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Validation failure in 'customers': missing columns ['age']
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Policies table validation passed (3 records).
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Policies validation failed: premium_amount must be positive.
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Policies validation failed: invalid policy_status {'InvalidStatus'}
+2026-10-09 05:26:39 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 05:26:39 | ERROR | motor_insurance_analytics | Relationship validation error: claims reference unknown policy_id.
+2026-10-09 11:18:42 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 11:18:42 | INFO | motor_insurance_analytics | STARTING MOTOR INSURANCE DATA PIPELINE EXECUTION
+2026-10-09 11:18:42 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 11:18:42 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'E:\Motor_insurance_analytics\data/raw'
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Loaded table 'customers.csv' with 20000 rows and 8 columns.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Loaded table 'vehicles.csv' with 25000 rows and 8 columns.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Loaded table 'policies.csv' with 25000 rows and 10 columns.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Loaded table 'claims.csv' with 10000 rows and 12 columns.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Loaded table 'payments.csv' with 7000 rows and 7 columns.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Beginning comprehensive validation across all tables...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Customers table validation passed (20000 records).
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Vehicles table validation passed (25000 records).
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Policies table validation passed (25000 records).
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Claims table validation passed (10000 records).
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Payments table validation passed (7000 records).
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | All tables and relationships validated successfully.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Found 59 policies where end_date < start_date (Cancelled status). Adjusting end_date to start_date.
+2026-10-09 11:18:43 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saving cleaned tables to 'E:\Motor_insurance_analytics\data/cleaned'...
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (20000 records).
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (25000 records).
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (25000 records).
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (10000 records).
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (7000 records).
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | MOTOR INSURANCE DATA PIPELINE COMPLETED SUCCESSFULLY
+2026-10-09 11:18:44 | INFO | motor_insurance_analytics | ============================================================
+2026-10-09 11:25:37 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 11:25:37 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 11:25:37 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 11:25:37 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 11:25:37 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'E:\Motor_insurance_analytics\data\cleaned'
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saving cleaned tables to 'C:\Users\MADHU\AppData\Local\Temp\tmp61ye9pz_'...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (3 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (1 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'E:\Motor_insurance_analytics\data\cleaned'
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Starting complete clean_data() workflow...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing handle_missing_values()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing remove_duplicates()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Removed 1 duplicate records from 'customers'.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing clean_text_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing clean_date_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing validate_numeric_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing validate_business_rules()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Executing create_derived_columns()...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Derived columns successfully generated for all tables.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Completed clean_data() pipeline successfully.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saving cleaned tables to 'C:\Users\MADHU\AppData\Local\Temp\tmp0yvj9jr9'...
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'customers_cleaned.csv' (3 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'vehicles_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'policies_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'claims_cleaned.csv' (2 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Saved 'payments_cleaned.csv' (1 records).
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | All cleaned datasets successfully exported.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Claims table validation passed (2 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Claims validation failed: claim_amount must be positive.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Claims validation failed: invalid damage_severity {'Catastrophic'}
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Customers table validation passed (3 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Customers validation failed: customer_id contains duplicate values.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Validation failure in 'customers': missing columns ['age']
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Policies table validation passed (3 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Policies validation failed: premium_amount must be positive.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Policies validation failed: invalid policy_status {'InvalidStatus'}
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Relationship validation error: claims reference unknown policy_id.
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Customers table validation passed (3 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Customers validation failed: customer_id contains duplicate values.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Validation failure in 'customers': missing columns ['age']
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Policies table validation passed (3 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Policies validation failed: premium_amount must be positive.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Policies validation failed: invalid policy_status {'InvalidStatus'}
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Claims table validation passed (2 records).
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Claims validation failed: claim_amount must be positive.
+2026-10-09 11:25:38 | ERROR | motor_insurance_analytics | Claims validation failed: invalid damage_severity {'Catastrophic'}
+2026-10-09 11:25:38 | INFO | motor_insurance_analytics | Relational integrity verification passed across all tables.
+2026-10-09 11:25:39 | ERROR | motor_insurance_analytics | Relationship validation error: claims reference unknown policy_id.
+2026-10-09 11:34:06 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: 'E:\Motor_insurance_analytics\data\cleaned'
+2026-10-09 11:34:06 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 11:34:06 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 11:34:06 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 11:34:07 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 11:34:07 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 11:34:07 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.

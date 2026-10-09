@@ -1,0 +1,7 @@
+2026-10-09 11:54:36 | INFO | motor_insurance_analytics | Initiating batch data loading from directory: '../data/cleaned'
+2026-10-09 11:54:36 | INFO | motor_insurance_analytics | Loaded table 'customers_cleaned.csv' with 20000 rows and 9 columns.
+2026-10-09 11:54:37 | INFO | motor_insurance_analytics | Loaded table 'vehicles_cleaned.csv' with 25000 rows and 9 columns.
+2026-10-09 11:54:37 | INFO | motor_insurance_analytics | Loaded table 'policies_cleaned.csv' with 25000 rows and 12 columns.
+2026-10-09 11:54:37 | INFO | motor_insurance_analytics | Loaded table 'claims_cleaned.csv' with 10000 rows and 20 columns.
+2026-10-09 11:54:37 | INFO | motor_insurance_analytics | Loaded table 'payments_cleaned.csv' with 7000 rows and 9 columns.
+2026-10-09 11:54:37 | INFO | motor_insurance_analytics | Successfully loaded all related insurance tables.
